@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enforce.lol</title>
+
+    <!-- Styles and Scripts -->
+    <link rel="stylesheet" href="css/star.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/antinspect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'MillionDesign';
+            src: url('fonts/MillionDesign.ttf') format('truetype');  
+        }
+
+        @keyframes sparkling {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        .sparkle-text {
+            animation: sparkling 2s infinite;
+        }
+
+        .navigation a {
+            text-shadow: 0px 0px 16.5px white;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Minecraftia', sans-serif;
+            font-size: 24px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="wallpaper" onload="document.body.style.opacity='1'">
+
+    <!-- Overlay -->
+    <div id="overlay">
+        <p>Click to enter...</p>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="galaxy">
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="title">Enforce.lol</h1>
+
+        <!-- Profile Links -->
+        <div class="profiles">
+
+            <a href="https://t.me/sadcat63" class="profile-link">
+                <div class="profile">
+                    <img src="img/paranoid.jpg" alt="Paranoid">
+                    <p>@Paranoid</p>
+                </div>
+            </a>
+
+            <a href="https://t.me/schizotripping" class="profile-link">
+                <div class="profile">
+                    <i class="fa-solid fa-crown"></i>   
+                    <img src="img/memory.png" alt="Memory">
+                    <p>@Memory</p>
+                </div>
+            </a>
+
+            <a href="https://t.me/osintschizo" class="profile-link">
+                <div class="profile">
+                    <img src="img/sha.jpg" alt="Sha">
+                    <p>@Sha</p>
+                </div>
+            </a>
+
+            <a href="https://t.me/temp4922" class="profile-link">
+                <div class="profile">
+                    <img src="img/fear.jpg" alt="Fear">
+                    <p>@Fear</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Additional Links -->
+        <div class="red-links">
+            <a href="https://t.me/enforcesh" class="profile-link">
+                <p>Join Our Telegram Here</p>
+            </a>
+        </div>
+
+        <div class="red-links">
+            <a href="https://x.com/enforcelol" class="profile-link">
+                <p>Join Our X Here</p>
+            </a>
+        </div>
+
+        <div class="red-links">
+            <a href="https://doxbin.net/upload/SamuelBriggs" class="profile-link">
+                <p>Briggy dox</p>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Overlay and Audio -->
+    <script>
+        document.getElementById("overlay").addEventListener("click", function() {
+            document.getElementById("overlay").style.display = "none";
+            var audio = new Audio('music/Afterlife.mp3');
+            audio.volume = 0.6;
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
